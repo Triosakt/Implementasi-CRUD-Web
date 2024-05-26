@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('Beground.jpeg');
+    background-position: 15% 10%;
+    background-size: cover;
+}
+
+.sidebar {
+    background-color: #333;
+    color: #ffd700;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    padding-top: 20px;
+}
+
+.sidebar h2 {
+    font-family: 'Metal Mania', cursive;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 20px;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    background-color: #444;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Metal Mania', cursive;
+    color: #ffd700;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.8); 
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: rgba(242, 242, 242, 0.8); /* Semi-transparent light grey */
+    font-weight: bold;
+    font-family: 'Metal Mania', cursive;
+    color: #06294e;
+}
+
+tr:nth-child(even) {
+    background-color: rgbargba(0, 0, 0, 0.8); /* Semi-transparent light grey */
+}
+
+tr:hover {
+    background-color: rgbargba(0, 0, 0, 0.8); /* Semi-transparent lighter grey */
+}
+
+td {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.btn.edit {
+    background-color: #06294e;
+    color: #fff;
+}
+
+.btn.delete {
+    background-color: #770d17;
+    color: #fff;
+}
+
+.btn.add {
+    background-color: #b0eb19;
+    color: #fff;
+}
+
+.btn.add:hover,
+.btn.edit:hover,
+.btn.delete:hover {
+    opacity: 0.8;
+}
